@@ -1,0 +1,495 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+:root {
+    --grey-color: #626262
+}
+
+
+.no-texture {
+    background: none;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header ul {
+    background: var(--grey-color);
+    margin: 0;
+    padding: 30px;
+    
+}
+
+ul .container {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul .container li a {
+    text-decoration: none;
+    color: #fff
+}
+
+.hero-img {
+    background: url('img/BannerPrincipal.jpg');
+    height: 80vh;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: flex-end; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img figure {
+    margin: 0;
+    width: 40%;
+}
+
+.hero-img figure img {
+    width: 100%;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    width: 56%;
+}
+
+.contact-info div {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: #fff
+}
+
+.contact-info img {
+    width: 35px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section.benefit {
+    background: url('img/textura.jpg');
+}
+
+section.benefit .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.benefit .container p {
+    text-align: center;
+    padding: 0px 30px;
+}
+
+section.benefit .container figure {
+    width: 130%;
+    margin: 0;
+}
+
+section.benefit .container figure img {
+    width: 100%;
+}
+
+section.benefits-details {
+    /* padding: ; */
+    display: flex;
+    justify-content: center;
+
+}
+
+section.benefits-details h2, p {
+    text-align: center;
+    width: 100%;
+}
+
+section.benefits-details .benefits-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section.benefits-details .benefits-img div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.benefits-details .benefits-img figure {
+    text-align: center;
+    width: 185px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.benefits-details img {
+    width: 100%;
+}
+
+footer {
+    background: url('img/textura.jpg');
+    display: flex;
+    /* padding: 50px 0px; */
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    flex-direction: column;
+    align-items: center;
+}
+
+footer figure {
+    margin: 0;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer figure img {
+    width: 100%;
+    /* box-sizing: border-box; */
+    /* padding: 20px; */
+}
+
+.button {
+    background: var(--grey-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+footer ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 40px 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+    color: #000;
+    border-right: 2px solid var(--grey-color);
+    /* padding: 5px 17px; */
+    width: 100%;
+    /* padding: 5px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li:last-child {
+    border-right: none;
+}
+
+footer ul li a {
+    color: var(--grey-color);
+    text-decoration: none;
+}
+
+.madeItBy {
+    background: var(--grey-color);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ============================================================================================== */
+/* ======================================= SOBRE NOSOTROS ======================================= */
+/* ============================================================================================== */
+
+section.info {
+    background: url('img/Juridicos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+section.info .container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 50px 70px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+section.info .container h2,
+section.info .container p {
+    color: #fff;
+}
+
+.about-details {
+    background: url('img/textura.jpg');
+}
+
+.about-details .container {
+    display: flex;
+    /* justify-items: center; */
+    justify-content: space-around;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.about-details .container div {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+.about-details .container figure {
+    margin: 0;
+}
+
+.about-details .container figure img {
+    width: 100%;
+}
+
+footer.about {
+    background: #fff;
+}
+
+/* ============================================================================================== */
+/* ========================================== SERVICIOS ========================================= */
+/* ============================================================================================== */
+
+.services-detail {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    margin-bottom: 50px;
+}
+
+.services-detail div {
+    position: relative;
+    display: flex;
+}
+
+.services-detail div figure {
+    margin: 0;
+    display: flex;
+}
+
+.services-detail div figure img {
+    width: 100%;
+    display: block
+}
+
+.services-detail-info {
+    position: absolute !important;
+    text-align: center;
+    height: 100%;
+    z-index: 50;
+    top: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title-info {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    color: var(--grey-color);
+}
+
+/* ============================================================================================== */
+/* ================================= VALUADORES Y CONTROLADORES ================================= */
+/* ============================================================================================== */
+
+section.valuadores {
+    background: url('img/textura.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+
+section.valuadores .empresas {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+section.valuadores .empresas div {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section.valuadores .empresas div.fovissste,
+section.valuadores .empresas div.infonavit {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+section.valuadores .empresas div.sif {
+    margin-top: 50px;
+}
+
+section.valuadores .empresas div figure {
+    margin: 0;
+    width: 116px;
+}
+
+section.valuadores .empresas div figure img {
+    width: 100%;
+}
+
+/* ?????????????????????????????????????????????????????????????????????????????????????????????? */
+/* ????????????????????????????????????????? INTEGRATE ???????????????????????????????????????? */
+/* ?????????????????????????????????????????????????????????????????????????????????????????????? */
+
+section.integrate {
+    background: url('img/textura.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.controlador .container div,
+.valuador .container div {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.valuador {
+    background: url('img/textura.jpg');
+}
+
+.valuador .container div figure,
+.controlador .container div figure {
+    width: 30%;
+}
+
+.valuador .container div figure img,
+.controlador .container div figure img {
+    width: 100%
+}
+.valuador .container div .requisitos,
+.controlador .container div .requisitos {
+    width: 70%;
+}
+
+.valuador .container div .requisitos,
+.controlador .container div .requisitos {
+    display: flex;
+    flex-direction: column;
+}
+
+.valuador .container div .requisitos ul ,
+.controlador .container div .requisitos ul  {
+    margin: 0;
+    padding: 0;
+}
+.valuador .container div .requisitos ul li,
+.controlador .container div .requisitos ul li {
+    list-style: none;
+}
+
+section.contactar {
+    text-align: center;
+}
+
+.button.integrate {
+    font-size: 1.5em;
+}
+
+/* ============================================================================================== */
+/* ========================================== CONTACTO ========================================== */
+/* ============================================================================================== */
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.contacto .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacto .container h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.contacto .contact-info {
+    width: 30%;
+}
+.form-contact {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-contact input {
+    width: 49%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.form-contact textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px 20px;
+}
+
+.form-contact input,
+.form-contact textarea {
+    box-sizing: border-box;
+    border: none;
+    border: 2px solid var(--grey-color)
+
+}
+
+.form-contact .send {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.form-contact .send input {
+    width: 30%;
+}
